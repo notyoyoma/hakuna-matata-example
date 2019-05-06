@@ -1,6 +1,16 @@
 const path = require('path');
-const HakunaMatata = require('./src/hakuna-matata/plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+
+var HakunaMatata, hmRequireExpression;
+// try {
+  HakunaMatata = require('./src/hakuna-matata/plugin');
+  hmRequireExpression = 'hakuna-matata';
+// } catch {
+//   HakunaMatata = require('@notyoyoma/hakuna-matata');
+//   hmRequireExpression = '@notyoyoma/hakuna-matata';
+// }
+
+console.log(hmRequireExpression);
 
 module.exports = {
   entry: './src/index.js',
@@ -13,7 +23,7 @@ module.exports = {
     contentBase: './dist'
   },
   plugins: [
-    new HakunaMatata({expression: 'hakuna-matata'}),
+    new HakunaMatata({expression: hmRequireExpression}),
     new HtmlWebpackPlugin(),
   ],
   resolve: {
