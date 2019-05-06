@@ -1,0 +1,4 @@
+[submodule "src/hakuna-matata"]
+	path = src/hakuna-matata
+	url = git@github.com:notyoyoma/hakuna-matata.git
+	branch = master
