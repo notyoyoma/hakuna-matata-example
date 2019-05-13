@@ -1,3 +1,1 @@
-console.log($hm);
-
-$hm.addPet();
+//$hm.addPet(); <-- Try typing this

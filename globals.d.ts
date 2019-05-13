@@ -1079,6 +1079,5 @@ export interface OperationMethods {
   ): OperationResponse<any>
 }
 
-export type Client = OpenAPIClient<OperationMethods>
-declare const $hm: OpenAPIClient<OperationMethods>
-      
+// export type Client = OpenAPIClient<OperationMethods>
+declare const $hm: OpenAPIClient<OperationMethods>;
